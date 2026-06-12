@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="login-screen" id="loginScreen">
+        <div class="login-box">
+            <img src="img/isalex.png" alt="Logo" class="login-logo">
+
+            <h1>Entrar</h1>
+            <p>Entre para continuar assistindo essa história</p>
+
+            <input type="text" id="usuario" placeholder="Usuário">
+            <input type="password" id="senha" placeholder="Senha">
+
+            <button onclick="fazerLogin()">Entrar</button>
+
+            <small id="erroLogin"></small>
+        </div>
+    </section>
+
+    <main class="site hidden" id="site">
+        <header class="cabecalho">
+            <div class="logo">
+                <img src="img/isalex.png" width="100px" alt="">
+            </div>
+
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="#">Minha Lista</a>
+            </nav>
+        </header>
+
+        <section class="banner">
+            <div class="conteudo">
+                <p class="titulo">Isabela e Alexsander</p>
+                <p class="detalhes">
+                    <span>12 de Junho, 3 TEMPORADAS</span>
+                    <span class="stars">
+                    <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
+                        <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
+                    </span>
+
+                    <p class="descricao">
+                    Nosso amor não prrcisa ser perfeito, porque ele é Verdadeiro. A gente se apoia nas dificuldades e se diverte nas coisas mais simples. Já passamos por muitos momentos bons e outros nem tanto, mas em todos eles, estar ao seu lado fez tudo valer a pena. Voce é meu porto seguro, minha paz em dias turbulentos e minha companhia preferida em qualquer situação. Com você aprendi que amor é parceria, é cuidado, é crescer junto. Eu te admiro por sua força, pela forma que cuida de seus entes queridos e do nosso relacionamento. Não vou te prometer a perfeição, mas quero estar aqui, te amar cada dia e criar um futuro cheio de memórias bonitas ao seu lado. Feliz dia dos namoraddos honey bee.
+                    </p>
+
+                    <div class="botoes">
+                        <button> <i class="fa-solid fa-play"></i>Continuar</button>
+                        <button> <i class="fa-solid fa-star"></i>Favoritar</button>
+                    </div>
+                </p>
+            </div>
+        </section>
+
+        <section class="momentos">
+            <h2>Nossos Momentos</h2>
+            <div class="swiper">
+ 
+                <div class="swiper-wrapper">
+    
+                
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.01.27 (2).jpeg" alt="b"></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.01.27 (4).jpeg" alt="c" srcset=""></div>
+                
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.01.27.jpeg" alt="d" srcset=""></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.02.04.jpeg" alt="e"></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.46.jpeg" alt="f" srcset=""></div>
+                
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.48.jpeg" alt="g" srcset=""></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.49.jpeg" alt="h"></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.52.jpeg" alt="i" srcset=""></div>
+                
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.33 (1).jpeg" alt="j" srcset=""></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.33 (2).jpeg" alt="k"></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.33.jpeg" alt="l" srcset=""></div>
+                
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.34 (1).jpeg" alt="m" srcset=""></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.34 (2).jpeg" alt="n"></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.34.jpeg" alt="o" srcset=""></div>
+                
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.35 (1).jpeg" alt="p" srcset=""></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.35 (2).jpeg" alt="q"></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.35.jpeg" alt="r" srcset=""></div>
+                
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (1).jpeg" alt="s" srcset=""></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (2).jpeg" alt="t"></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (3).jpeg" alt="u" srcset=""></div>
+
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (4).jpeg" alt="v" srcset=""></div>
+                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.37.jpeg" alt="w"></div>
+                
+    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  
+            loop: true,
+            autoplay:{
+                delay: 2500,
+                disabledOnInteraction:false,
+            },
+            slidesPerView:2,
+            spaceBetween: 10,
+            loop:true,
+            breakpoints:{
+                600:{
+                    loop:true,
+                    slidesPerView:3,
+                spaceBetween:15,
+                }
+            }
+        });
+    </script>
+</body>
+</html>
