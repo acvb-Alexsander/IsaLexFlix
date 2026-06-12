@@ -1,141 +1,473 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <section class="login-screen" id="loginScreen">
-        <div class="login-box">
-            <img src="img/isalex.png" alt="Logo" class="login-logo">
+      <div class="login-box">
+        <img src="img/isalex.png" alt="Logo" class="login-logo" />
 
-            <h1>Entrar</h1>
-            <p>Entre para continuar assistindo essa história</p>
+        <h1>Entrar</h1>
+        <p>Entre para continuar assistindo essa história</p>
 
-            <input type="text" id="usuario" placeholder="Usuário">
-            <input type="password" id="senha" placeholder="Senha">
+        <input type="text" id="usuario" placeholder="Usuário" />
+        <input type="password" id="senha" placeholder="Senha" />
 
-            <button onclick="fazerLogin()">Entrar</button>
+        <button onclick="fazerLogin()">Entrar</button>
 
-            <small id="erroLogin"></small>
-        </div>
+        <small id="erroLogin"></small>
+      </div>
     </section>
 
     <main class="site hidden" id="site">
-        <header class="cabecalho">
-            <div class="logo">
-                <img src="img/isalex.png" width="100px" alt="">
+      <header class="cabecalho">
+        <div class="logo">
+          <img src="img/isalex.png" width="100px" alt="" />
+        </div>
+
+        <nav>
+          <a href="#inicio">Início</a>
+          <a href="#momentos">Momentos</a>
+          <a href="#historia">Nossa História</a>
+          <a href="#favoritos">Favoritos</a>
+          <a href="#episodios">Episódios</a>
+          <a href="#carta">Carta Secreta</a>
+        </nav>
+      </header>
+
+      <section id="inicio" class="banner">
+        <div class="conteudo">
+          <p class="titulo">Isabela e Alexsander</p>
+          <div class="detalhes">
+            <span>12 de Junho, 3 TEMPORADAS</span>
+            <span class="stars">
+              <i class="fa-solid fa-star" style="color: rgb(255, 0, 0)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 0, 0)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 0, 0)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 0, 0)"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 0, 0)"></i>
+            </span>
+
+            <p class="descricao">
+              Nosso amor não prrcisa ser perfeito, porque ele é Verdadeiro. A
+              gente se apoia nas dificuldades e se diverte nas coisas mais
+              simples. Já passamos por muitos momentos bons e outros nem tanto,
+              mas em todos eles, estar ao seu lado fez tudo valer a pena. Voce é
+              meu porto seguro, minha paz em dias turbulentos e minha companhia
+              preferida em qualquer situação. Com você aprendi que amor é
+              parceria, é cuidado, é crescer junto. Eu te admiro por sua força,
+              pela forma que cuida de seus entes queridos e do nosso
+              relacionamento. Não vou te prometer a perfeição, mas quero estar
+              aqui, te amar cada dia e criar um futuro cheio de memórias bonitas
+              ao seu lado. Feliz dia dos namoraddos honey bee.
+            </p>
+
+            <div class="botoes">
+              <button><i class="fa-solid fa-play"></i>Continuar</button>
+              <button><i class="fa-solid fa-star"></i>Favoritar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="momentos" class="momentos">
+        <h2>Nossos Momentos</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.01.27 (2).jpeg"
+                alt="b"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.01.27 (4).jpeg"
+                alt="c"
+                srcset=""
+              />
             </div>
 
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Filmes</a>
-                <a href="#">Séries</a>
-                <a href="#">Minha Lista</a>
-            </nav>
-        </header>
-
-        <section class="banner">
-            <div class="conteudo">
-                <p class="titulo">Isabela e Alexsander</p>
-                <p class="detalhes">
-                    <span>12 de Junho, 3 TEMPORADAS</span>
-                    <span class="stars">
-                    <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
-                        <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
-                        <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
-                        <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
-                        <i class="fa-solid fa-star" style="color: rgb(255, 0, 0);"></i>
-                    </span>
-
-                    <p class="descricao">
-                    Nosso amor não prrcisa ser perfeito, porque ele é Verdadeiro. A gente se apoia nas dificuldades e se diverte nas coisas mais simples. Já passamos por muitos momentos bons e outros nem tanto, mas em todos eles, estar ao seu lado fez tudo valer a pena. Voce é meu porto seguro, minha paz em dias turbulentos e minha companhia preferida em qualquer situação. Com você aprendi que amor é parceria, é cuidado, é crescer junto. Eu te admiro por sua força, pela forma que cuida de seus entes queridos e do nosso relacionamento. Não vou te prometer a perfeição, mas quero estar aqui, te amar cada dia e criar um futuro cheio de memórias bonitas ao seu lado. Feliz dia dos namoraddos honey bee.
-                    </p>
-
-                    <div class="botoes">
-                        <button> <i class="fa-solid fa-play"></i>Continuar</button>
-                        <button> <i class="fa-solid fa-star"></i>Favoritar</button>
-                    </div>
-                </p>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.01.27.jpeg"
+                alt="d"
+                srcset=""
+              />
             </div>
-        </section>
-
-        <section class="momentos">
-            <h2>Nossos Momentos</h2>
-            <div class="swiper">
- 
-                <div class="swiper-wrapper">
-    
-                
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.01.27 (2).jpeg" alt="b"></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.01.27 (4).jpeg" alt="c" srcset=""></div>
-                
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.01.27.jpeg" alt="d" srcset=""></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.02.04.jpeg" alt="e"></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.46.jpeg" alt="f" srcset=""></div>
-                
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.48.jpeg" alt="g" srcset=""></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.49.jpeg" alt="h"></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.52.jpeg" alt="i" srcset=""></div>
-                
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.33 (1).jpeg" alt="j" srcset=""></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.33 (2).jpeg" alt="k"></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.33.jpeg" alt="l" srcset=""></div>
-                
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.34 (1).jpeg" alt="m" srcset=""></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.34 (2).jpeg" alt="n"></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.34.jpeg" alt="o" srcset=""></div>
-                
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.35 (1).jpeg" alt="p" srcset=""></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.35 (2).jpeg" alt="q"></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.35.jpeg" alt="r" srcset=""></div>
-                
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (1).jpeg" alt="s" srcset=""></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (2).jpeg" alt="t"></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (3).jpeg" alt="u" srcset=""></div>
-
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (4).jpeg" alt="v" srcset=""></div>
-                    <div class="swiper-slide"><img src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.37.jpeg" alt="w"></div>
-                
-    
-                </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.02.04.jpeg"
+                alt="e"
+              />
             </div>
-        </section>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.46.jpeg"
+                alt="f"
+                srcset=""
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.48.jpeg"
+                alt="g"
+                srcset=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.49.jpeg"
+                alt="h"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.21.52.jpeg"
+                alt="i"
+                srcset=""
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.33 (1).jpeg"
+                alt="j"
+                srcset=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.33 (2).jpeg"
+                alt="k"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.33.jpeg"
+                alt="l"
+                srcset=""
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.34 (1).jpeg"
+                alt="m"
+                srcset=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.34 (2).jpeg"
+                alt="n"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.34.jpeg"
+                alt="o"
+                srcset=""
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.35 (1).jpeg"
+                alt="p"
+                srcset=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.35 (2).jpeg"
+                alt="q"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.35.jpeg"
+                alt="r"
+                srcset=""
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (1).jpeg"
+                alt="s"
+                srcset=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (2).jpeg"
+                alt="t"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (3).jpeg"
+                alt="u"
+                srcset=""
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.36 (4).jpeg"
+                alt="v"
+                srcset=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/isa&lex/WhatsApp Image 2026-06-12 at 11.34.37.jpeg"
+                alt="w"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="historia" id="historia">
+        <h2>Nossa História</h2>
+
+        <div class="linha-do-tempo">
+          <div class="evento">
+            <span>Temporada 1</span>
+            <h3>O Começo</h3>
+            <p>
+              Foi aqui que tudo começou: um vídeo no Instagram, uma música
+              cantada na academia, um desenho favorito em comum que abriu espaço
+              para a primeira conversa, um beijo em uma festa de amigos em
+              comum… e, depois disso, tantas saídas memoráveis. Pequenos
+              detalhes que pareciam simples, mas que se transformaram no início
+              de uma história linda, cheia de encontros, risadas, conexão e
+              momentos que jamais vamos esquecer.
+            </p>
+          </div>
+
+          <div class="evento">
+            <span>Temporada 2</span>
+            <h3>Os Momentos</h3>
+            <p>
+              Vivemos dias incríveis, daqueles que ficam guardados pra sempre na
+              memória! Viajamos juntos, fomos para a cabana, assistimos muitos
+              filmes e nos jogamos em várias aventuras. Rimos, aproveitamos cada
+              momento e nos divertimos como nunca. Foram dias leves, intensos e
+              cheios de felicidade, capítulos especiais da nossa história que
+              mostram o quanto é bom viver tudo isso lado a lado.
+            </p>
+          </div>
+
+          <div class="evento">
+            <span>Temporada 3</span>
+            <h3>Hoje</h3>
+            <p>
+              Hoje seguimos escrevendo a nossa história, talvez no capítulo mais
+              difícil até aqui. Foram momentos tensos, conversas difíceis e
+              muitas dúvidas pelo caminho. Mas toda grande história também tem
+              seus desafios, e são eles que mostram a força do amor, da parceria
+              e da vontade de continuar. Como em um bom conto de fadas, este
+              capítulo não será o fim, mas apenas uma parte da nossa jornada.
+              Vamos superar as dificuldades, aprender com tudo isso e seguir em
+              frente mais fortes, mais unidos e com ainda mais certeza do que
+              queremos construir juntos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="favoritos" id="favoritos">
+        <h2>Nossos Favoritos</h2>
+
+        <div class="cards-favoritos">
+          <div class="card-favorito">
+            <i class="fa-solid fa-music"></i>
+            <h3>Nossa Música</h3>
+            <p>Eu te devoro</p>
+          </div>
+
+          <div class="card-favorito">
+            <i class="fa-solid fa-film"></i>
+            <h3>Nosso Filme</h3>
+            <p>Nosferatu</p>
+          </div>
+
+          <div class="card-favorito">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Nosso Lugar</h3>
+            <p>Sala de cinema</p>
+          </div>
+
+          <div class="card-favorito">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Nossa Comida</h3>
+            <p>Pizza</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="episodios" id="episodios">
+        <h2>Episódios Especiais</h2>
+
+        <div class="lista-episodios">
+          <div class="episodio">
+            <div class="numero-ep">EP. 01</div>
+            <div>
+              <h3>Dia 13/04</h3>
+              <p>O primeiro capítulo dessa história linda.</p>
+            </div>
+          </div>
+
+          <div class="episodio">
+            <div class="numero-ep">EP. 02</div>
+            <div>
+              <h3>Dia 14/06</h3>
+              <p>Um episódio cheio de comédia, amor e lembranças especiais.</p>
+            </div>
+          </div>
+
+          <div class="episodio">
+            <div class="numero-ep">EP. 03</div>
+            <div>
+              <h3>Explorando o Rio</h3>
+              <p>
+                Um episodio especial no qual viajamos e saímos para explorar o
+                mundo só nos dois
+              </p>
+            </div>
+          </div>
+
+          <div class="episodio">
+            <div class="numero-ep">EP. 04</div>
+            <div>
+              <h3>Nosso futuro</h3>
+              <p>O episódio que ainda estamos escrevendo juntos.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="carta" id="carta">
+        <div id="bloqueioCarta" class="bloqueio-carta">
+          <i class="fa-solid fa-lock"></i>
+
+          <h2>Carta Secreta</h2>
+
+          <p>
+            Essa carta está trancada. Digite a senha para revelar o conteúdo.
+          </p>
+
+          <input
+            type="password"
+            id="senhaCarta"
+            placeholder="Senha da carta"
+            onkeydown="if (event.key === 'Enter') desbloquearCarta();"
+          />
+
+          <button onclick="desbloquearCarta()">Desbloquear</button>
+
+          <small id="erroCarta"></small>
+        </div>
+
+        <div id="conteudoCarta" class="carta-box hidden">
+          <h2>Carta Secreta</h2>
+
+          <p>
+            Se você chegou até aqui, é porque encontrou uma das partes mais
+            especiais desse site. A senha marca algo especial
+          </p>
+
+          <p>
+            Obrigado por estar ao meu lado, por dividir momentos comigo, por me
+            fazer sorrir e por transformar dias comuns em memórias bonitas. Eu
+            amo viver essa história com você.
+          </p>
+
+          <p class="assinatura">Com amor, Alexsander ❤️</p>
+        </div>
+      </section>
+
+      <div id="surpresa" class="surpresa hidden">
+        <div class="surpresa-box">
+          <button class="fechar-surpresa" onclick="mostrarSurpresa()">X</button>
+          <h2>Você é meu episódio favorito ❤️</h2>
+          <p>
+            Entre todas as temporadas, capítulos e momentos, você sempre vai ser
+            minha melhor parte.
+          </p>
+        </div>
+      </div>
     </main>
 
     <script src="js/script.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-  
-            loop: true,
-            autoplay:{
-                delay: 2500,
-                disabledOnInteraction:false,
-            },
-            slidesPerView:2,
-            spaceBetween: 10,
-            loop:true,
-            breakpoints:{
-                600:{
-                    loop:true,
-                    slidesPerView:3,
-                spaceBetween:15,
-                }
-            }
-        });
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disabledOnInteraction: false,
+        },
+        slidesPerView: 2,
+        spaceBetween: 10,
+        breakpoints: {
+          600: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+        },
+      });
+
+      const SENHA_CARTA = "27/11/2026";
+
+      function desbloquearCarta() {
+        const senhaDigitada = document
+          .getElementById("senhaCarta")
+          .value.trim()
+          .toLowerCase();
+
+        const erroCarta = document.getElementById("erroCarta");
+        const bloqueioCarta = document.getElementById("bloqueioCarta");
+        const conteudoCarta = document.getElementById("conteudoCarta");
+
+        if (senhaDigitada === SENHA_CARTA.toLowerCase()) {
+          bloqueioCarta.classList.add("hidden");
+          conteudoCarta.classList.remove("hidden");
+          erroCarta.textContent = "";
+        } else {
+          conteudoCarta.classList.add("hidden");
+          erroCarta.textContent = "Senha incorreta. Tente novamente ❤️";
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
