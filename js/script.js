@@ -7,7 +7,7 @@ function fazerLogin() {
   const erroLogin = document.getElementById("erroLogin");
   const musicaLogin = document.getElementById("musicaLogin");
 
-  if (usuario === "isa" && senha === "alex") {
+  if (usuario === "Isa" && senha === "alex") {
     loginScreen.style.display = "none";
     site.classList.remove("hidden");
     musicaLogin.volume = 0.4;

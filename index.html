@@ -37,7 +37,12 @@
         <p>Entre para continuar assistindo essa história</p>
 
         <input type="text" id="usuario" placeholder="Usuário" />
-        <input type="password" id="senha" placeholder="Senha" />
+        <input
+          type="password"
+          id="senha"
+          placeholder="Senha"
+          onkeydown="if (event.key === 'Enter') fazerLogin();"
+        />
 
         <button onclick="fazerLogin()">Entrar</button>
 
@@ -296,7 +301,7 @@
 
           <div class="evento">
             <span>Temporada 3</span>
-            <h3>Hoje</h3>
+            <h3>Desafios</h3>
             <p>
               Hoje seguimos escrevendo a nossa história, talvez no capítulo mais
               difícil até aqui. Foram momentos tensos, conversas difíceis e
